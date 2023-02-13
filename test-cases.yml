@@ -11,21 +11,263 @@
     - Нажимаем кнопку Create a Game
     - В подменю Game Type нажимаем with a bot
     - Нажимаем кнопку Create battle 
-    - В левом окне начинаем писать любые символы
+    - В левом окне пишем "Hello friend"
   expected-result: |
     В правом окне соперник пишет код, который отображается онлайн
 
 - summary: |
-    Проверка входа пользователя с несуществующими логином и паролем
+    Проверка регистрации через Git
   requirement: |
-    При неправильном логине или пароле пользователь должен получить сообщение об ошибке
+    Если пользователь имеет аккаунт на Git, он может через него выполнить регистрацию
   prerequisites:
-    Открыта страница логина
+    Открыта главная страница
   test-data: |
-    Логин = Логин = hexlet Пароль = badpass
+    Имеется аккаунт на Git
   steps:
-    - Вводим логин
-    - Вводим пароль
-    - Нажимаем кнопку «Войти»
+    - Нажимаем кнопку Sign up
+    - Нажимаем кнопку Sign in with Github
+    - На отрывшейся странице нажимаем Allow access
   expected-result: |
-    Пользователь должен попасть на главную страницу
+    Пользователя перенапраявляет на страницу https://codebattle.hexlet.io/#lobby
+
+- summary: |
+    Проверка регистрации через email
+  requirement: |
+    Пользователь может выполнить регистрацию через email
+  prerequisites: |
+    открыта главная страница
+  test-data: |
+    Имеется email
+  steps:
+    - Нажимаем кнопку Sign up
+    - В поле Nickname вводим любое допустимое имя из букв и цифр от 8 до 10 символов
+    - В поле Email вводим почту к которой есть доступ
+    - В поле Password вводим пароль "Test password123"
+    - В поле Password расположеном ниже вводим тот же пароль "Test password123"
+    - Нажимаем кнопку Submit
+  expected-result: |
+    Успешная регистрация и редирект на страницу https://codebattle.hexlet.io/#lobby
+
+- summary: |
+    Пользователь имеет возможность создать игру
+  requirement: |
+    Пользователь может успешно создать новую игру
+  prerequisites: |
+    Выполнена авторизация, открыта главная страница
+  test-data: |
+    Сайт https://codebattle.hexlet.io
+  steps:
+    - Нажимаем кнопку Create a Game
+    - В подменю Game Type нажимаем with a bot
+    - Нажимаем кнопку Create battle 
+  expected-result: |
+    Создалась новая игра
+
+- summary: |
+    Пользователь не может менять код соперника
+  requirement: |
+    Во время батла, пользователь не может изменить код написанный соперником
+  prerequisites: |
+    Выполнена авторизация
+  test-data: |
+    Сайт https://codebattle.hexlet.io
+  steps:
+    - Нажимаем кнопку Create a Game
+    - В подменю Game Type нажимаем with a bot
+    - Нажимаем кнопку Create battle 
+    - В окне с кодом соперника щелкаем левой кнопкой мыши в лбом месте кроме начал кода и конца
+    - Нажимаем кнопку backspace
+    - Вводим символ .
+    - Вводим символ :
+    - Вводим символ *
+    - Вводим букву ж
+    - Вводим букву w
+    - Вводим цифру 3
+  expected-result: |
+    Никаких действий не происходит, символы которые ввели не отображаются в окне соперника
+
+- summary: |
+    Пользователь может проверить код с помощью кнопки check solution
+  requirement: |
+    Во время батла, пользователь может проверить код на наличие ошибок с помощью кнопки check solution
+  prerequisites: |
+    Выполнена авторизация
+  test-data: |
+    Сайт https://codebattle.hexlet.io
+  steps:
+    - Нажимаем кнопку Create a Game
+    - В подменю Game Type нажимаем with a bot
+    - Нажимаем кнопку Create battle 
+    - Над окном с кодом нажимаем кнопку check solution
+  expected-result: |
+    Во вкладке OUTPUT выводится сообщение о результате проверки кода
+
+- summary: |
+    Пользователь может сбросить код
+  requirement: |
+    Во время батла, пользователь может сбросить свой код
+  prerequisites: |
+    Выполнена авторизация
+  test-data: |
+    Сайт https://codebattle.hexlet.io
+  steps:
+    - Нажимаем кнопку Create a Game
+    - В подменю Game Type нажимаем with a bot
+    - Нажимаем кнопку Create battle 
+    - В левом окне пишем "Hello friend"
+    - Над окном с кодом нажимаем кнопку reset editor
+  expected-result: |
+    Код в левом окне сбросился
+
+- summary: |
+    Пользователь может сбросить код
+  requirement: |
+    Во время батла, пользователь может сбросить свой код
+  prerequisites: |
+    Выполнена авторизация
+  test-data: |
+    Сайт https://codebattle.hexlet.io
+  steps:
+    - Нажимаем кнопку Create a Game
+    - В подменю Game Type нажимаем with a bot
+    - Нажимаем кнопку Create battle 
+    - В левом окне пишем "Hello friend"
+    - Над окном с кодом нажимаем кнопку reset editor
+  expected-result: |
+    Код в левом окне сбросился
+
+- summary: |
+    Пользователь может сбросить код
+  requirement: |
+    Во время батла, пользователь может сбросить свой код
+  prerequisites: |
+    Выполнена авторизация
+  test-data: |
+    Сайт https://codebattle.hexlet.io
+  steps:
+    - Нажимаем кнопку Create a Game
+    - В подменю Game Type нажимаем with a bot
+    - Нажимаем кнопку Create battle 
+    - В левом окне пишем "Hello friend"
+    - Над окном с кодом нажимаем кнопку reset editor
+  expected-result: |
+    Код в левом окне сбросился
+
+- summary: |
+    Пользователь может сбросить код
+  requirement: |
+    Во время батла, пользователь может сбросить свой код
+  prerequisites: |
+    Выполнена авторизация
+  test-data: |
+    Сайт https://codebattle.hexlet.io
+  steps:
+    - Нажимаем кнопку Create a Game
+    - В подменю Game Type нажимаем with a bot
+    - Нажимаем кнопку Create battle 
+    - В левом окне пишем "Hello friend"
+    - Над окном с кодом нажимаем кнопку reset editor
+  expected-result: |
+    Код в левом окне сбросился
+
+- summary: |
+    Пользователь может сбросить код
+  requirement: |
+    Во время батла, пользователь может сбросить свой код
+  prerequisites: |
+    Выполнена авторизация
+  test-data: |
+    Сайт https://codebattle.hexlet.io
+  steps:
+    - Нажимаем кнопку Create a Game
+    - В подменю Game Type нажимаем with a bot
+    - Нажимаем кнопку Create battle 
+    - В левом окне пишем "Hello friend"
+    - Над окном с кодом нажимаем кнопку reset editor
+  expected-result: |
+    Код в левом окне сбросился
+
+- summary: |
+    Пользователь может сбросить код
+  requirement: |
+    Во время батла, пользователь может сбросить свой код
+  prerequisites: |
+    Выполнена авторизация
+  test-data: |
+    Сайт https://codebattle.hexlet.io
+  steps:
+    - Нажимаем кнопку Create a Game
+    - В подменю Game Type нажимаем with a bot
+    - Нажимаем кнопку Create battle 
+    - В левом окне пишем "Hello friend"
+    - Над окном с кодом нажимаем кнопку reset editor
+  expected-result: |
+    Код в левом окне сбросился
+
+- summary: |
+    Пользователь может сбросить код
+  requirement: |
+    Во время батла, пользователь может сбросить свой код
+  prerequisites: |
+    Выполнена авторизация
+  test-data: |
+    Сайт https://codebattle.hexlet.io
+  steps:
+    - Нажимаем кнопку Create a Game
+    - В подменю Game Type нажимаем with a bot
+    - Нажимаем кнопку Create battle 
+    - В левом окне пишем "Hello friend"
+    - Над окном с кодом нажимаем кнопку reset editor
+  expected-result: |
+    Код в левом окне сбросился
+
+- summary: |
+    Пользователь может сбросить код
+  requirement: |
+    Во время батла, пользователь может сбросить свой код
+  prerequisites: |
+    Выполнена авторизация
+  test-data: |
+    Сайт https://codebattle.hexlet.io
+  steps:
+    - Нажимаем кнопку Create a Game
+    - В подменю Game Type нажимаем with a bot
+    - Нажимаем кнопку Create battle 
+    - В левом окне пишем "Hello friend"
+    - Над окном с кодом нажимаем кнопку reset editor
+  expected-result: |
+    Код в левом окне сбросился
+
+- summary: |
+    Пользователь может сбросить код
+  requirement: |
+    Во время батла, пользователь может сбросить свой код
+  prerequisites: |
+    Выполнена авторизация
+  test-data: |
+    Сайт https://codebattle.hexlet.io
+  steps:
+    - Нажимаем кнопку Create a Game
+    - В подменю Game Type нажимаем with a bot
+    - Нажимаем кнопку Create battle 
+    - В левом окне пишем "Hello friend"
+    - Над окном с кодом нажимаем кнопку reset editor
+  expected-result: |
+    Код в левом окне сбросился
+
+- summary: |
+    Пользователь может сбросить код
+  requirement: |
+    Во время батла, пользователь может сбросить свой код
+  prerequisites: |
+    Выполнена авторизация
+  test-data: |
+    Сайт https://codebattle.hexlet.io
+  steps:
+    - Нажимаем кнопку Create a Game
+    - В подменю Game Type нажимаем with a bot
+    - Нажимаем кнопку Create battle 
+    - В левом окне пишем "Hello friend"
+    - Над окном с кодом нажимаем кнопку reset editor
+  expected-result: |
+    Код в левом окне сбросился
