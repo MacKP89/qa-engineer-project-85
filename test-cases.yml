@@ -351,6 +351,236 @@
     открывается повтор игры
 
 - summary: |
+    Проверка возможности создать игру со сложностью одна звезда
+  requirement: |
+    Пользователь может создать игру с одной зведой
+  prerequisites: |
+    Выполнена авторизация
+  test-data: |
+    Сайт https://codebattle.hexlet.io
+  steps:
+    - Нажимаем кнопку Create a Game
+    - В подменю Level выбираем одну звезду
+    - В подменю Game Type нажимаем with other users
+    - В подменю Time control выбираем минимальное время
+    - В подменю Choose task by name or tags выбираем random task
+    - В подменю Tags выбираем любой тэг
+    - Нажимаем кнопку Create battle
+  expected-result: |
+    Создалась игра и началось ожидание другого игрока 
+
+- summary: |
+    Проверка возможности создать игру со сложностью две звезды
+  requirement: |
+    Пользователь может создать игру с двумя звездами
+  prerequisites: |
+    Выполнена авторизация
+  test-data: |
+    Сайт https://codebattle.hexlet.io
+  steps:
+    - Нажимаем кнопку Create a Game
+    - В подменю Level выбираем одну звезду
+    - В подменю Game Type нажимаем with a friend
+    - В подменю Time control выбираем максимальное время
+    - В подменю Choose opponent выбираем любого пользователя
+    - В подменю Choose task by name or tags выбираем любой тэг
+    - В подменю Tags ничего не выбираем
+    - Нажимаем кнопку Create battle
+  expected-result: |
+    Создалась игра и началось ожидание другого игрока 
+
+- summary: |
+    Проверка возможности создать игру со сложностью три звезды
+  requirement: |
+    Пользователь может создать игру с тремя звездами
+  prerequisites: |
+    Выполнена авторизация
+  test-data: |
+    Сайт https://codebattle.hexlet.io
+  steps:
+    - Нажимаем кнопку Create a Game
+    - В подменю Level выбираем три звезды
+    - В подменю Game Type нажимаем with a bot
+    - В подменю Time control выбираем 30 минут
+    - В подменю Choose task by name or tags выбираем random task
+    - В подменю Tags ничего не выбираем
+    - Нажимаем кнопку Create battle
+  expected-result: |
+    Создалась и началась игра
+
+- summary: |
+    Проверка возможности создать игру со сложностью четыре звезды
+  requirement: |
+    Пользователь может создать игру с четырмя звездами
+  prerequisites: |
+    Выполнена авторизация
+  test-data: |
+    Сайт https://codebattle.hexlet.io
+  steps:
+    - Нажимаем кнопку Create a Game
+    - В подменю Level выбираем четыре звезды
+    - В подменю Game Type нажимаем with a bot
+    - В подменю Time control выбираем 30 минут
+    - В подменю Choose task by name or tags выбираем любой тэг
+    - В подменю Tags ничего не выбираем
+    - Нажимаем кнопку Create battle
+  expected-result: |
+    Создалась и началась игра
+
+- summary: |
+    Проверка возможности сдаться
+  requirement: |
+    Пользователь может сдаться во время игры
+  prerequisites: |
+    Выполнена авторизация
+  test-data: |
+    Сайт https://codebattle.hexlet.io
+  steps:
+    - Нажимаем кнопку Create a Game
+    - В подменю Game Type нажимаем with a bot
+    - Нажимаем кнопку Create battle 
+    - Над левым окном с кодом нажимаем кнопку Give up
+    - Во всплывшем окне нажимаем Give up
+  expected-result: |
+    Появилось сообщение о завершении игры
+
+- summary: |
+    Проверка возможности выбрать язык Python
+  requirement: |
+    Во время батла, пользователь может выбрать язык программирования Python в терминале батла
+  prerequisites: |
+    Выполнена авторизация
+  test-data: |
+    Сайт https://codebattle.hexlet.io
+  steps:
+    - Нажимаем кнопку Create a Game
+    - В подменю Game Type нажимаем with a bot
+    - Нажимаем кнопку Create battle 
+    - Над левым окном нажимаем на язык который выбран по умолчанию
+    - В выпадающем меню выбираем Python
+  expected-result: |
+    Язык выбран, в окне с кодом изменился язык на Python
+
+- summary: |
+    Проверка возможности выбрать язык Java
+  requirement: |
+    Во время батла, пользователь может выбрать язык программирования Java в терминале батла
+  prerequisites: |
+    Выполнена авторизация
+  test-data: |
+    Сайт https://codebattle.hexlet.io
+  steps:
+    - Нажимаем кнопку Create a Game
+    - В подменю Game Type нажимаем with a bot
+    - Нажимаем кнопку Create battle 
+    - Над левым окном нажимаем на язык который выбран по умолчанию
+    - В выпадающем меню выбираем Java
+  expected-result: |
+    Язык выбран, в окне с кодом изменился язык на Java
+
+- summary: |
+    Проверка возможности выбрать язык C++
+  requirement: |
+    Во время батла, пользователь может выбрать язык программирования C++ в терминале батла
+  prerequisites: |
+    Выполнена авторизация
+  test-data: |
+    Сайт https://codebattle.hexlet.io
+  steps:
+    - Нажимаем кнопку Create a Game
+    - В подменю Game Type нажимаем with a bot
+    - Нажимаем кнопку Create battle 
+    - Над левым окном нажимаем на язык который выбран по умолчанию
+    - В выпадающем меню выбираем С++
+  expected-result: |
+    Язык выбран, в окне с кодом изменился язык на С++
+
+- summary: |
+    Проверка возможности выбрать язык Node.js
+  requirement: |
+    Во время батла, пользователь может выбрать язык программирования Node.js в терминале батла
+  prerequisites: |
+    Выполнена авторизация
+  test-data: |
+    Сайт https://codebattle.hexlet.io
+  steps:
+    - Нажимаем кнопку Create a Game
+    - В подменю Game Type нажимаем with a bot
+    - Нажимаем кнопку Create battle 
+    - Над левым окном нажимаем на язык который выбран по умолчанию
+    - В выпадающем меню выбираем Node.js
+  expected-result: |
+    Язык выбран, в окне с кодом изменился язык на Node.js
+
+- summary: |
+    Проверка возможности выбрать язык C#
+  requirement: |
+    Во время батла, пользователь может выбрать язык программирования C# в терминале батла
+  prerequisites: |
+    Выполнена авторизация
+  test-data: |
+    Сайт https://codebattle.hexlet.io
+  steps:
+    - Нажимаем кнопку Create a Game
+    - В подменю Game Type нажимаем with a bot
+    - Нажимаем кнопку Create battle 
+    - Над левым окном нажимаем на язык который выбран по умолчанию
+    - В выпадающем меню выбираем С#
+  expected-result: |
+    Язык выбран, в окне с кодом изменился язык на С#
+
+- summary: |
+    Проверка возможности выбрать язык PHP
+  requirement: |
+    Во время батла, пользователь может выбрать язык программирования PHP в терминале батла
+  prerequisites: |
+    Выполнена авторизация
+  test-data: |
+    Сайт https://codebattle.hexlet.io
+  steps:
+    - Нажимаем кнопку Create a Game
+    - В подменю Game Type нажимаем with a bot
+    - Нажимаем кнопку Create battle 
+    - Над левым окном нажимаем на язык который выбран по умолчанию
+    - В выпадающем меню выбираем PHP
+  expected-result: |
+    Язык выбран, в окне с кодом изменился язык на PHP
+
+- summary: |
+    Проверка возможности сменить язык задачи на другой язык
+  requirement: |
+    Во время батла, пользователь может изменить язык задачи на другой
+  prerequisites: |
+    Выполнена авторизация
+  test-data: |
+    Сайт https://codebattle.hexlet.io
+  steps:
+    - Нажимаем кнопку Create a Game
+    - В подменю Game Type нажимаем with a bot
+    - Нажимаем кнопку Create battle 
+    - Над левым окном с кодом рядом с кнопкой Show guide нажимаем кнопку языка который сейчас выбран
+    - В выпадающем меню выбираем язык отличный от того который выбран сейчас
+  expected-result: |
+    Язык зыдачи поменялся на выбранный
+
+- summary: |
+    Пользователь может сбросить код
+  requirement: |
+    Во время батла, пользователь может сбросить свой код
+  prerequisites: |
+    Выполнена авторизация
+  test-data: |
+    Сайт https://codebattle.hexlet.io
+  steps:
+    - Нажимаем кнопку Create a Game
+    - В подменю Game Type нажимаем with a bot
+    - Нажимаем кнопку Create battle 
+    - В левом окне пишем "Hello friend"
+    - Над окном с кодом нажимаем кнопку reset editor
+  expected-result: |
+    Код в левом окне сбросился
+
+- summary: |
     Пользователь может сбросить код
   requirement: |
     Во время батла, пользователь может сбросить свой код
@@ -401,3 +631,53 @@
   expected-result: |
     Код в левом окне сбросился
 
+- summary: |
+    Пользователь может сбросить код
+  requirement: |
+    Во время батла, пользователь может сбросить свой код
+  prerequisites: |
+    Выполнена авторизация
+  test-data: |
+    Сайт https://codebattle.hexlet.io
+  steps:
+    - Нажимаем кнопку Create a Game
+    - В подменю Game Type нажимаем with a bot
+    - Нажимаем кнопку Create battle 
+    - В левом окне пишем "Hello friend"
+    - Над окном с кодом нажимаем кнопку reset editor
+  expected-result: |
+    Код в левом окне сбросился
+
+- summary: |
+    Пользователь может сбросить код
+  requirement: |
+    Во время батла, пользователь может сбросить свой код
+  prerequisites: |
+    Выполнена авторизация
+  test-data: |
+    Сайт https://codebattle.hexlet.io
+  steps:
+    - Нажимаем кнопку Create a Game
+    - В подменю Game Type нажимаем with a bot
+    - Нажимаем кнопку Create battle 
+    - В левом окне пишем "Hello friend"
+    - Над окном с кодом нажимаем кнопку reset editor
+  expected-result: |
+    Код в левом окне сбросился
+
+- summary: |
+    Пользователь может сбросить код
+  requirement: |
+    Во время батла, пользователь может сбросить свой код
+  prerequisites: |
+    Выполнена авторизация
+  test-data: |
+    Сайт https://codebattle.hexlet.io
+  steps:
+    - Нажимаем кнопку Create a Game
+    - В подменю Game Type нажимаем with a bot
+    - Нажимаем кнопку Create battle 
+    - В левом окне пишем "Hello friend"
+    - Над окном с кодом нажимаем кнопку reset editor
+  expected-result: |
+    Код в левом окне сбросился
