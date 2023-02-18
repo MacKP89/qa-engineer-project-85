@@ -7,6 +7,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - Нажимаем кнопку Create a Game
     - В подменю Game Type нажимаем with a bot
@@ -53,9 +54,10 @@
   requirement: |
     Пользователь может успешно создать новую игру
   prerequisites: |
-    Выполнена авторизация, открыта главная страница
+    Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - Нажимаем кнопку Create a Game
     - В подменю Game Type нажимаем with a bot
@@ -69,6 +71,7 @@
     Во время батла, пользователь не может изменить код написанный соперником
   prerequisites: |
     Выполнена авторизация
+    Логин = test333@gmail.com Пароль = password333
   test-data: |
     Сайт https://codebattle.hexlet.io
   steps:
@@ -94,6 +97,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - Нажимаем кнопку Create a Game
     - В подменю Game Type нажимаем with a bot
@@ -110,6 +114,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - Нажимаем кнопку Create a Game
     - В подменю Game Type нажимаем with a bot
@@ -127,6 +132,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - Нажимаем кнопку Create a Game
     - В подменю Game Type нажимаем with a bot
@@ -148,6 +154,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - В верхней правой части страницы нажимаем на профиль пользователя
     - Во всплывшем меню выбираем My Profile
@@ -163,6 +170,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - В правой части страницы в меню leaderboard нажимаем top list
     - Выбираем вкладку weekly
@@ -177,6 +185,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - В правой части страницы в меню leaderboard нажимаем top list
     - Выбираем вкладку monthly
@@ -191,6 +200,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - В правой части страницы в меню leaderboard нажимаем top list
     - Выбираем вкладку total
@@ -205,6 +215,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - В правой части страницы в меню LEADERBOARD нажимаем week
   expected-result: |
@@ -218,6 +229,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - В правой части страницы в меню LEADERBOARD нажимаем month
   expected-result: |
@@ -231,6 +243,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - В правой части страницы в меню LEADERBOARD нажимаем all
   expected-result: |
@@ -244,6 +257,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - Нажимаем кнопку top list в правом меню
     - Нажимаем кнопку rank
@@ -258,6 +272,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - Нажимаем кнопку top list в правом меню
     - Нажимаем кнопку user
@@ -272,6 +287,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - Нажимаем кнопку top list в правом меню
     - Нажимаем кнопку rating
@@ -286,6 +302,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - Нажимаем кнопку top list в правом меню
     - Нажимаем кнопку games played
@@ -300,6 +317,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - Нажимаем кнопку top list в правом меню
     - Нажимаем кнопку perfotrmance
@@ -314,6 +332,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - Нажимаем кнопку top list в правом меню
     - Нажимаем кнопку joined
@@ -328,6 +347,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - Нажимаем на вкладку complited games
     - в колонке actions нажимаем на верхнюю кнопку show
@@ -342,6 +362,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - Нажимаем на свой профиль в верхнем правом углу
     - Во всплывшем меню нажимаем my profile
@@ -358,6 +379,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - Нажимаем кнопку Create a Game
     - В подменю Level выбираем одну звезду
@@ -375,6 +397,7 @@
     Пользователь может создать игру с двумя звездами
   prerequisites: |
     Выполнена авторизация
+    Логин = test333@gmail.com Пароль = password333
   test-data: |
     Сайт https://codebattle.hexlet.io
   steps:
@@ -397,6 +420,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - Нажимаем кнопку Create a Game
     - В подменю Level выбираем три звезды
@@ -416,6 +440,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - Нажимаем кнопку Create a Game
     - В подменю Level выбираем четыре звезды
@@ -435,6 +460,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - Нажимаем кнопку Create a Game
     - В подменю Game Type нажимаем with a bot
@@ -452,6 +478,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - Нажимаем кнопку Create a Game
     - В подменю Game Type нажимаем with a bot
@@ -469,6 +496,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - Нажимаем кнопку Create a Game
     - В подменю Game Type нажимаем with a bot
@@ -486,6 +514,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - Нажимаем кнопку Create a Game
     - В подменю Game Type нажимаем with a bot
@@ -503,6 +532,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - Нажимаем кнопку Create a Game
     - В подменю Game Type нажимаем with a bot
@@ -520,6 +550,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - Нажимаем кнопку Create a Game
     - В подменю Game Type нажимаем with a bot
@@ -537,6 +568,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - Нажимаем кнопку Create a Game
     - В подменю Game Type нажимаем with a bot
@@ -554,6 +586,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - Нажимаем кнопку Create a Game
     - В подменю Game Type нажимаем with a bot
@@ -571,6 +604,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - Нажимаем кнопку Create a Game
     - В подменю Game Type нажимаем with a bot
@@ -588,6 +622,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - Нажимаем кнопку Create a Game
     - В подменю Game Type нажимаем with a bot
@@ -605,6 +640,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - Нажимаем кнопку Create a Game
     - В подменю Game Type нажимаем with a bot
@@ -622,6 +658,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - Нажимаем кнопку Create a Game
     - В подменю Game Type нажимаем with a bot
@@ -639,6 +676,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - Нажимаем кнопку Create a Game
     - В подменю Game Type нажимаем with a bot
@@ -656,6 +694,7 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - Нажимаем кнопку Create a Game
     - В подменю Game Type нажимаем with a bot
@@ -673,6 +712,79 @@
     Выполнена авторизация
   test-data: |
     Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
+  steps:
+    - Нажимаем кнопку Create a Game
+    - В подменю Game Type нажимаем with a bot
+    - Нажимаем кнопку Create battle 
+    - В левом окне пишем "Hello friend"
+    - Над окном с кодом нажимаем кнопку reset editor
+  expected-result: |
+    Код в левом окне сбросился
+
+- summary: |
+    Пользователь может сбросить код
+  requirement: |
+    Во время батла, пользователь может сбросить свой код
+  prerequisites: |
+    Выполнена авторизация
+  test-data: |
+    Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
+  steps:
+    - Нажимаем кнопку Create a Game
+    - В подменю Game Type нажимаем with a bot
+    - Нажимаем кнопку Create battle 
+    - В левом окне пишем "Hello friend"
+    - Над окном с кодом нажимаем кнопку reset editor
+  expected-result: |
+    Код в левом окне сбросился
+
+- summary: |
+    Пользователь может сбросить код
+  requirement: |
+    Во время батла, пользователь может сбросить свой код
+  prerequisites: |
+    Выполнена авторизация
+  test-data: |
+    Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
+  steps:
+    - Нажимаем кнопку Create a Game
+    - В подменю Game Type нажимаем with a bot
+    - Нажимаем кнопку Create battle 
+    - В левом окне пишем "Hello friend"
+    - Над окном с кодом нажимаем кнопку reset editor
+  expected-result: |
+    Код в левом окне сбросился
+
+- summary: |
+    Пользователь может сбросить код
+  requirement: |
+    Во время батла, пользователь может сбросить свой код
+  prerequisites: |
+    Выполнена авторизация
+  test-data: |
+    Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
+  steps:
+    - Нажимаем кнопку Create a Game
+    - В подменю Game Type нажимаем with a bot
+    - Нажимаем кнопку Create battle 
+    - В левом окне пишем "Hello friend"
+    - Над окном с кодом нажимаем кнопку reset editor
+  expected-result: |
+    Код в левом окне сбросился
+
+- summary: |
+    Пользователь может сбросить код
+  requirement: |
+    Во время батла, пользователь может сбросить свой код
+  prerequisites: |
+    Выполнена авторизация
+  test-data: |
+    Сайт https://codebattle.hexlet.io
+    Логин = test333@gmail.com Пароль = password333
   steps:
     - Нажимаем кнопку Create a Game
     - В подменю Game Type нажимаем with a bot
